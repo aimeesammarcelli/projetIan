@@ -1,0 +1,49 @@
+h1{
+  font-size: 100px;
+  font-family: 'Noto Serif', serif;
+}
+
+body{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+  h1{
+    font-size: 40px;
+    font-family: 'Noto Serif', serif;
+  }
+
+  p{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  h1{
+    font-size: 60px;
+    font-family: 'Noto Serif', serif;
+  }
+
+  p{
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px){
+  h1{
+    font-size: 80px;
+    font-family: 'Noto Serif', serif;
+  }
+
+  p{
+    font-size: 65px;
+    font-family: 'Roboto', sans-serif;
+  }
+}
