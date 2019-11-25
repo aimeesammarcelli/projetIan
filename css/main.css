@@ -6,6 +6,18 @@ a{
   text-decoration: none;
 }
 
+.logo{
+  position: absolute;
+  background-color: white;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+.site-title{
+  width: 10%;
+  text-align: center;
+}
+
 nav li{
   display: flex;
   flex-direction: column;
@@ -13,8 +25,31 @@ nav li{
   padding: 10px;
 }
 
+nav li :hover{
+  background-color: white;
+  border: 1px solid black;
+}
+
 nav{
   text-align: center;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+}
+
+.hero{
+  background-image: url('/images/lg/lg-image-00.jpg');
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgba(0,0,0,.3);
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 @media (min-width: 768px){
@@ -24,5 +59,37 @@ nav{
 }
 
 
-section{
+.main-content{
+  display: flex;
+  flex-grow: inherit;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; 
+  
+}
+
+.product-list-item{
+  margin: 20px;
+  width: 20%
+}
+
+.teaser-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.gorilla-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.goilla-list-item{
+  margin: 2%;
+  width: 20%
 }
