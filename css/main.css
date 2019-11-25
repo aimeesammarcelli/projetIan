@@ -93,3 +93,19 @@ header{
   margin: 2%;
   width: 20%
 }
+
+.dossier-top-clearfix{
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+}
+
+.dossier-top-clearfix img{
+  width: 100%;
+  height: 800px;;
+}
+
+.strip-image img{
+  width: 100%;
+  height: 100px;
+}
