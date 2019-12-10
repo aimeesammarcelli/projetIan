@@ -6,9 +6,16 @@ a{
   text-decoration: none;
 }
 
+.site-id{
+  position: relative;
+}
+
 .site-id h1{
-  font-size: 40px;
-  display: inline-flex;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  font-size: 50px;
+  width: 130px;
 }
 
 .logo{
@@ -16,11 +23,9 @@ a{
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 100%;
   border: 1px solid black;
-  width: 5%;
 }
 
 .site-title{
-  width: 10%;
   text-align: center;
 }
 
@@ -29,7 +34,7 @@ nav li{
   flex-direction: row;
   justify-content: space-around;
   padding: 20px;
-  
+
 }
 
 nav li :visited {
@@ -46,25 +51,22 @@ nav{
 }
 
 header{
-  height: 70px;
+  height: 80px;
   display: flex;
   align-items: center;
-  padding: 0 32px;
 }
 
 .hero{
   background-image: url('http://www.therelativeobserver.com/wp-content/uploads/2018/08/jungle.jpg');
-  padding: 15%;
-  object-fit: cover;
+  min-height:90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .introduction{
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  max-width: 50%;
   background-color: rgba(0,0,0,.3);
   border: 1px solid white;
   border-radius: 5px;
@@ -167,8 +169,3 @@ footer nav ul{
 footer h1{
   font-size: 40px;
 }
-
-
-
-/*ne pas oublier les images pour les retina (x2)
-mettre en forme
