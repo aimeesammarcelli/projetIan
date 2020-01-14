@@ -169,3 +169,167 @@ footer nav ul{
 footer h1{
   font-size: 40px;
 }
+
+
+/* nav */
+
+
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo{
+  font-size: 40px;
+  margin: auto;
+}
+
+.menu-toggle{
+  background-color: #f00;
+  height: 100%;
+}
+.menu-toggle .burger-breads span
+{
+display: block;
+width: 33px;
+height: 4px;
+margin-bottom: 5px;
+position: relative;
+background: #ffffff;
+z-index: 1;
+}
+
+.menu-close .burger-breads span
+{
+display: block;
+width: 33px;
+height: 4px;
+margin-bottom: 5px;
+position: relative;
+background: #CDCDCD;
+z-index: 1;
+transform: rotate(45deg) translate(-2px, -1px);
+background: rgb(124, 140, 167);
+}
+.menu-close .burger-breads span:nth-child(2) {
+transform: rotate(135deg) translate(-6px, 9px);
+}
+.menu-close .burger-breads span:nth-child(3) {
+opacity: 0;
+}
+.menu-toggle {
+display: inline-block;
+padding: 1em;
+}
+.main-menu {
+position: absolute;
+top: 0;
+bottom: 0;
+height: 100%;
+overflow-x: scroll;
+overflow-y:visible;
+transition: left 0.3s ease, box-shadow 0.3s ease;
+z-index: 999;
+left: -200px;
+}
+.main-menu ul {
+margin: 0;
+padding: 2.5em 0 0;
+min-height: 100%;
+width: 200px;
+background: rgb(41, 46, 56);
+}
+.main-menu a {
+display: block;
+padding: .75em 15px;
+line-height: 1em;
+font-size: 1em;
+color: #fff;
+text-decoration: none;
+border-bottom: 1px solid rgb(127,140,167);
+}
+.main-menu li:first-child a {
+border-top: 1px solid rgb(127,140,167);
+}
+.main-menu a:hover,
+.main-menu a:focus {
+background: #000000;
+text-decoration: underline;
+}
+.main-menu .menu-close {
+position: absolute;
+right: 0;
+top:0;
+border-bottom: 1px solid transparent;
+}
+
+.main-menu:target{
+  display: block;
+  left: 0;
+  outline: none;
+  box-shadow: 3px 0 12px rgba(0, 0, 0, .25);
+}
+
+.main-menu:target .menu-close{
+  z-index: 1001;
+}
+
+.main-menu:target ul{
+  position: relative;
+  z-index: 1000;
+}
+
+.main-menu:target + .backdrop{
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background-color: #000000;
+  background: rgba(0, 0, 0, .85);
+  cursor: default;
+}
+
+@supports (position: fixed){
+  .main-menu,
+  .main-menu:target + .backdrop{
+      position: fixed;
+  }
+}
+
+@media (min-width:768px){
+  .menu-toggle,
+  .main-menu .menu-close{
+      display: none;
+  }
+
+  .main-menu{
+      position: relative;
+      left: auto;
+      top: auto;
+      height: auto;
+      display: block;
+  }
+
+  .main-menu ul{
+      display: flex;
+      padding-left: 0;
+      height: auto;
+      width: auto;
+      background: none;
+
+  }
+
+  .main-menu a{
+      color: rgb(20, 20, 72);
+      border: 0 !important;
+  }
+
+  .main-menu a:hover, 
+  .main-menu a:focus{
+      background: none;
+      color: #c00;
+  }
+}
