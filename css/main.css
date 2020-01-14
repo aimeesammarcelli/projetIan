@@ -71,6 +71,7 @@ header{
   justify-content: center;
 }
 
+/*introduction */
 
 .introduction{
   max-width: 50%;
@@ -84,6 +85,10 @@ header{
 .introduction h2{
   text-align: center;
   padding-bottom: 3%;
+}
+
+.introduction p{
+  text-align: center;
 }
 
 @media (min-width: 768px){
@@ -108,6 +113,7 @@ header{
   margin: 1vw;
   flex-basis: 320px;
   flex-grow: 1;
+  object-fit: cover;
 }
 
 .product-list-item img{
