@@ -214,10 +214,10 @@ width: 33px;
 height: 4px;
 margin-bottom: 5px;
 position: relative;
-background: #CDCDCD;
+background: #000000;
 z-index: 1;
 transform: rotate(45deg) translate(-2px, -1px);
-background: rgb(124, 140, 167);
+background: black;
 }
 .menu-close .burger-breads span:nth-child(2) {
 transform: rotate(135deg) translate(-6px, 9px);
@@ -244,7 +244,7 @@ left: -200px;
 margin: 0;
 min-height: 100%;
 width: 200px;
-background: rgb(41, 46, 56);
+background: white;
 }
 .main-menu a {
 display: block;
@@ -260,7 +260,7 @@ border-top: 1px solid rgb(127,140,167);
 }
 .main-menu a:hover,
 .main-menu a:focus {
-background: #000000;
+background: white;
 text-decoration: underline;
 }
 .main-menu .menu-close {
@@ -336,4 +336,8 @@ border-bottom: 1px solid transparent;
       background: none;
       color: #c00;
   }
+}
+
+.menu-close .burger-breads:hover span{
+  background: red;
 }
