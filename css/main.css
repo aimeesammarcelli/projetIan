@@ -11,18 +11,21 @@ a{
 }
 
 .site-id h1{
-  position: absolute;
-  left: 50%;
-  right: 50%;
   font-size: 50px;
   width: 130px;
 }
 
-.logo{
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 100%;
-  border: 1px solid black;
+.logo {
+    font-size: 40px;
+    margin: auto;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    border: 1px solid black;
 }
 
 .site-title{
@@ -51,10 +54,14 @@ nav{
 }
 
 header{
-  height: 80px;
+/*  height: 80px; */
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
+
+
+
 
 .hero{
   background-image: url('http://www.therelativeobserver.com/wp-content/uploads/2018/08/jungle.jpg');
@@ -174,12 +181,6 @@ footer h1{
 /* nav */
 
 
-header{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 .logo{
   font-size: 40px;
   margin: auto;
@@ -235,7 +236,6 @@ left: -200px;
 }
 .main-menu ul {
 margin: 0;
-padding: 2.5em 0 0;
 min-height: 100%;
 width: 200px;
 background: rgb(41, 46, 56);
@@ -307,8 +307,6 @@ border-bottom: 1px solid transparent;
 
   .main-menu{
       position: relative;
-      left: auto;
-      top: auto;
       height: auto;
       display: block;
   }
@@ -327,7 +325,7 @@ border-bottom: 1px solid transparent;
       border: 0 !important;
   }
 
-  .main-menu a:hover, 
+  .main-menu a:hover,
   .main-menu a:focus{
       background: none;
       color: #c00;
