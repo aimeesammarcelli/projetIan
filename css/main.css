@@ -4,6 +4,7 @@ header, footer{
 
 a{
   text-decoration: none;
+  
 }
 
 .site-id{
@@ -109,11 +110,19 @@ header{
 
 }
 
+.product-list-item a{
+  padding: 20px;
+  background-color: pink;
+  color: #f00;
+  border-radius: 5%;
+}
+
 .product-list-item{
   margin: 1vw;
   flex-basis: 320px;
   flex-grow: 1;
   object-fit: cover;
+  padding-top: 3em;
 }
 
 .product-list-item img{
@@ -121,8 +130,12 @@ header{
 }
 
 .product-list-item h3{
-  font-size: 30px;
+  font-size: 2em;
   padding-bottom: 5%;
+}
+
+.product-list-item p{
+  padding-bottom: 2em;
 }
 
 .teaser-list{
@@ -141,6 +154,18 @@ header{
   margin: 1vw;
   flex-basis: 320px;
   flex-grow: 1;
+  padding-top: 3em;
+}
+
+.goilla-list-item a{
+  padding: 20px;
+  background-color: pink;
+  color: #f00;
+  border-radius: 5%;
+}
+
+.goilla-list-item H2{
+  font-size: 2em;
 }
 
 .goilla-list-item img{
@@ -166,6 +191,17 @@ header{
 .gorila-list-list{
   text-align: center;
   padding: 5%;
+}
+
+.gorilla-list p{
+  padding: 5%;
+  padding-bottom: 2em;
+  text-align: left;
+}
+
+.gorilla-list a:hover{
+  text-decoration: underline;
+  color: white;
 }
 
 footer{
@@ -219,16 +255,20 @@ z-index: 1;
 transform: rotate(45deg) translate(-2px, -1px);
 background: black;
 }
+
 .menu-close .burger-breads span:nth-child(2) {
 transform: rotate(135deg) translate(-6px, 9px);
 }
+
 .menu-close .burger-breads span:nth-child(3) {
 opacity: 0;
 }
+
 .menu-toggle {
 display: inline-block;
 padding: 1em;
 }
+
 .main-menu {
 position: absolute;
 top: 0;
@@ -238,7 +278,6 @@ overflow-x: scroll;
 overflow-y:visible;
 transition: left 0.3s ease, box-shadow 0.3s ease;
 z-index: 999;
-left: -200px;
 }
 .main-menu ul {
 margin: 0;
@@ -272,7 +311,7 @@ border-bottom: 1px solid transparent;
 
 .main-menu:target{
   display: block;
-  left: 0;
+  right: 0;
   outline: none;
   box-shadow: 3px 0 12px rgba(0, 0, 0, .25);
 }
@@ -305,7 +344,14 @@ border-bottom: 1px solid transparent;
   }
 }
 
+@media (max-width:768px){
+  .main-menu{
+    right: -200px;
+  }
+}
+
 @media (min-width:768px){
+
   .menu-toggle,
   .main-menu .menu-close{
       display: none;
@@ -340,4 +386,50 @@ border-bottom: 1px solid transparent;
 
 .menu-close .burger-breads:hover span{
   background: red;
+}
+
+
+/* gorilla proboscis */
+
+@media( max-width: 850px ){
+
+  .dossier-top-clearfix{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .dossier-top-content{
+    margin: 1vw;
+    flex-basis: 320px;
+    flex-grow: 1;
+  }
+  
+}
+
+.dossier-top-content{
+  margin: auto;
+  text-align: center;
+}
+
+.dossier-top-content h2{
+  padding-bottom: 1em;
+}
+
+
+.dossier-top-p{
+  padding-bottom: 3em;
+}
+
+.dossier-top-content a{
+  background-color:pink;
+  color: red;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+
+.section-content{
+  padding-top: 2em;
 }

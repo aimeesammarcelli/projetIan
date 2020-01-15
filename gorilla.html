@@ -7,21 +7,39 @@
   </head>
   <body>
 
-      <header>
-          <div class="site-id">
-            <img src="images/logos-n-icons/logo-01.svg" alt="Gorilla CSS" class="logo">
-            <h1 class="site-title">Gorilla CSS</h1>
+    <header>
+      <div class="site-id">
+        <img src="images/logos-n-icons/logo-01.svg" alt="Gorilla CSS" class="logo">
+        <h1 class="site-title">Gorilla CSS</h1>
+      </div>
+
+      <nav>
+
+        <a href="#main-menu" class="menu-toggle">
+          <div class="burger-breads">
+          <span></span>
+          <span></span>
+          <span></span>
           </div>
-      
-          <nav>
+          </a>
+          <nav id="main-menu" class="main-menu">
+            <a href="#main-menu-toggle" class="menu-close">
+            <div class="burger-breads close">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            </a>
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="gorilla-liste.html">Lists</a></li>
-              <li><a href="gorilla.html">Proboscis</a></li>
+             <li><a href="gorilla-liste.html">Lists</a></li>
+             <li><a href="gorilla.html">Proboscis</a></li>
             </ul>
           </nav>
-      
-        </header>
+          <a href="#main-menu-toggle" class="backdrop" hidden></a>
+      </nav> 
+
+    </header>
       
         <div class="hero">
           <div class="introduction">
@@ -32,12 +50,13 @@
       
       
         <section class="dossier-top-clearfix">
-            <img src="images/portraits/pt-image-00.jpg" alt="A portrait of a proboscis monkey">
+            <img src="images/portraits/pt-image-07.jpg" alt="A portrait of a proboscis monkey">
+
             <div class="dossier-top-content">
               <div>
               <h2>Proboscis Monkeys</h2>
               <p>Proboscis means nose, which explains their name, as the noses on the males of this species are clownishly large.</p>
-              <p>These unique monkeys inhabit the island of Borneo in southern Asia and nowhere else on the planet.</p>
+              <p class="dossier-top-p">These unique monkeys inhabit the island of Borneo in southern Asia and nowhere else on the planet.</p>
               <a href="https://en.wikipedia.org/wiki/Proboscis_monkey">Read more on Wikipedia</a>
               </div>
             </div>
