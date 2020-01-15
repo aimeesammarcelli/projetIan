@@ -435,3 +435,12 @@ border-bottom: 1px solid transparent;
 .section-content{
   padding-top: 2em;
 }
+
+/* grid */
+
+.gorilla-list-grid{
+  display: grid;
+  grid-gap: 20% 20% 20%;
+  grid-template-columns: repeat(3, 1fr);
+
+}
