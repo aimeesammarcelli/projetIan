@@ -112,8 +112,8 @@ header{
 
 .product-list-item a{
   padding: 20px;
-  background-color: pink;
-  color: #f00;
+  background-color: #B5FFBC;
+  color: #00760C;
   border-radius: 5%;
 }
 
@@ -159,8 +159,8 @@ header{
 
 .goilla-list-item a{
   padding: 20px;
-  background-color: pink;
-  color: #f00;
+  background-color: #B5FFBC;
+  color: #00760C;
   border-radius: 5%;
 }
 
@@ -186,6 +186,7 @@ header{
 .strip-image img{
   width: 100%;
   height: 100px;
+  object-fit: cover;
 }
 
 .gorila-list-list{
@@ -205,7 +206,8 @@ header{
 }
 
 footer{
-  background-color: tomato;
+  background-color: #B5FFBC;
+  margin-top: 3em;
 }
 
 
@@ -229,7 +231,7 @@ footer h1{
 }
 
 .menu-toggle{
-  background-color: #f00;
+  background-color: #00760C;
   height: 100%;
 }
 .menu-toggle .burger-breads span
@@ -380,12 +382,12 @@ border-bottom: 1px solid transparent;
   .main-menu a:hover,
   .main-menu a:focus{
       background: none;
-      color: #c00;
+      color: #00760C;
   }
 }
 
 .menu-close .burger-breads:hover span{
-  background: red;
+  background: #00760C;
 }
 
 
@@ -423,8 +425,8 @@ border-bottom: 1px solid transparent;
 }
 
 .dossier-top-content a{
-  background-color:pink;
-  color: red;
+  background-color:#B5FFBC;
+  color: #00760C;
   padding: 30px;
   border-radius: 5px;
 }
